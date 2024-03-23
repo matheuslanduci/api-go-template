@@ -1,0 +1,13 @@
+mode: development
+
+server:
+  port: 8080
+  host: localhost
+
+cors:
+  allow_origins: "*"
+  allow_headers: "*"
+  allow_methods: "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS"
+
+database:
+  url: "postgresql://postgres:root@localhost:5432/testing?sslmode=disable"

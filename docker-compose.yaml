@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: development
+    ports:
+      - 5432:5432
+  redis:
+    image: redis:6
+    restart: always
+    ports:
+      - 6379:6379
